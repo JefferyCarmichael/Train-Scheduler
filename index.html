@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <!--jumbotron -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-2">Train Scheduler</h1>
+        </div>
+
+        <!--end jumbotron-->
+
+        <div class="container" id="traininfo">
+            <!--table header-->
+            <div class="row panel panel-header" style="height: 40px; padding-top: 20px; font-size: 18px;" id="table-header">
+                <div class="col-sm-12">
+                    <h2>Current Train Schedule</h2>
+                </div>
+                <!--column end-->
+            </div>
+            <!--row end-->
+            <!--table header end-->
+
+
+            <!--Train Info Table-->
+            <div class="row border">
+                <div class="col-sm-12">
+                    <table class="table table-striped" id="times">
+                        <thead>
+                            <tr style="font-weight: bold;" class=" alert-dark">
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency(min) </th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!--attach schedule here-->
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--column end-->
+            </div>
+            <!--row end-->
+            <!--End of Train Info Table-->
+
+            <!--spacer-->
+            <dir class="row">
+                <div class="col-sm-12"></div>
+            </dir>
+            <!--spacer end-->
+
+            <!--Form for Adding Train -->
+            <!--form header-->
+            <div class="row" style="height: 40px; padding-top:10px; font-size: 18px;" id="table-header">
+                <div class="col-sm-12">
+                    <h2>Add Train</h2>
+                </div>
+                <!--column end-->
+            </div>
+            <!--row end-->
+            <!--form header end-->
+
+            <div class="row border">
+                <div class="col-sm-12" style="height: 400px;" id="box">
+                    <form>
+
+                        <div class="form-group" style="font-weight: bold; margin-right:5px;">
+
+                            <label for="text" style="line-height: 20px;">Train Name:</label>
+                            <input type="text" class="form-control" id="trainName" placeholder="">
+                        </div>
+                        <div class="form-group" style="font-weight: bold;">
+                            <label for="text">Destination:</label>
+                            <input type="text" class="form-control" id="destination" placeholder="">
+                        </div>
+
+                        <div class="form-group" style="font-weight: bold;">
+                            <label for="text">First Train Time(HH:mm - military time):</label>
+                            <input type="number" class="form-control" id="firstTrain" placeholder="">
+                        </div>
+
+                        <div class="form-group" style="font-weight: bold;">
+                            <label for="text">Frequency(min):</label>
+                            <input type="number" class="form-control" id="frequency" placeholder="">
+                        </div>
+                        <button type="submit" class="btn btn-primary button" id="addInfo">Submit</button>
+                    </form>
+                </div>
+                <!--column end-->
+            </div>
+            <!--row end-->
+        </div>2
+        <!--container-end-->
+</body>
+
+<Footer>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/app.js"></script>
+</Footer>
+
+</html>
