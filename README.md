@@ -1,6 +1,6 @@
 ## Train Scheduler
 
-![GitHub Logo](assets/images/scheduler.jpg)
+![GitHub Logo](assets/images/Scheduler.jpg)
 
 
 __*Train Scheduler*__ generates individual train schedules based time and destination.
