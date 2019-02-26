@@ -1,5 +1,5 @@
 body{
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
 }
 
 .jumbotron{  
@@ -8,9 +8,13 @@ body{
     background-position: 0px -180px;
     background-repeat: no-repeat;
      background-size:cover;
-    border: 2px solid rgba(0,0,0,.5);
-    box-shadow: inset 0 0 20px #000;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+    box-shadow: inset 0px 0px 20px 1px rgba(0, 0, 0, 0.612),6px 6px 20px 1px rgba(0, 0, 0, 0.612);
     opacity: .8;
+}
+
+#traininfo{
+    box-shadow: inset 0px 0px 20px 1px rgba(0, 0, 0, 0.612),6px 6px 20px 1px rgba(0, 0, 0, 0.612);   
 }
 
 .display-2{
@@ -59,11 +63,14 @@ box-shadow: inset 0 0 15px  rgba(132, 132, 136, 0.774);
     border: 1px solid #5c5c5eab;
 }
 
+/* .table-responsive{-sm|-md|-lg|-xl} */
+
 @media screen and (max-width: 1190px){
     .jumbotron{
     background-position: 0px -20px;
     }
 }
+
 
   @media screen and (max-width: 780px){
       .jumbotron{
@@ -73,9 +80,45 @@ box-shadow: inset 0 0 15px  rgba(132, 132, 136, 0.774);
     .display-2{
         font-size: 50px;
     }
-    #trainName{
-        width: 475px;
+    
+
+    h2{
+        font-size: 16px;
+        font-weight: bold;
+    }
+  
+    .form-group{
+        font-size: 12px;
+    }
+  
+    .alert-dark,tr{
+        font-size: 10px;
+    }
+  
+ }
+
+
+ @media screen and (max-width: 580px){
+    .jumbotron{
+    background-position: 0px 0px;
     }
 
-  
-    }
+  .display-2{
+      font-size: 30px;
+  }
+
+  h2{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group{
+    font-size: 10px;
+}
+
+.alert-dark,tr{
+    font-size: 8px;
+}
+
+
+}
